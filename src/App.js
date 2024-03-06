@@ -92,16 +92,16 @@ function App() {
     <React.Fragment>
       <NavBar theme={theme} user={user} onQuery={handleQueryChange} onQueryOption={handleQueryOption} />
       <Toggle theme={theme} device={deviceType} onSwitch={() => handleSwitch(theme)} />
-      <Routes> {/* Use Routes instead of Switch */}
+      <Routes>
         <Route path="/test" element={<Test />} />
-        <Route path="/message" element={<ProtectedRoute component={Message} />} />
-        <Route path="/personal-information" element={<ProtectedRoute component={() => <PersonalInformation theme={theme} device={deviceType} user={user} />} />} />
-        <Route path="/userlist" element={<AdminProtectedRoute component={() => <UserList theme={theme} device={deviceType} user={user} />} />} />
-        <Route path="/setting" element={<ProtectedRoute component={() => <Setting theme={theme} device={deviceType} user={user} />} />} />
-        <Route path="/introduction" element={<ProtectedRoute component={Introduction} />} />
-        <Route path="/activities" element={<ProtectedRoute component={Activities} />} />
-        <Route path="/my-concern" element={<ProtectedRoute component={MyConcern} />} />
-        <Route path="/find-friends" element={<ProtectedRoute component={FindFriends} />} />
+        <Route path="/message" element={<ProtectedRoute><Message /></ProtectedRoute>} />
+        <Route path="/personal-information" element={<ProtectedRoute><PersonalInformation theme={theme} device={deviceType} user={user} /></ProtectedRoute>} />
+        <Route path="/userlist" element={<AdminProtectedRoute><UserList theme={theme} device={deviceType} user={user} /></AdminProtectedRoute>} />
+        <Route path="/setting" element={<ProtectedRoute><Setting theme={theme} device={deviceType} user={user} /></ProtectedRoute>} />
+        <Route path="/introduction" element={<ProtectedRoute><Introduction /></ProtectedRoute>} />
+        <Route path="/activities" element={<ProtectedRoute><Activities /></ProtectedRoute>} />
+        <Route path="/my-concern" element={<ProtectedRoute><MyConcern /></ProtectedRoute>} />
+        <Route path="/find-friends" element={<ProtectedRoute><FindFriends /></ProtectedRoute>} />
         <Route path="/register" element={<Register theme={theme} device={deviceType} />} />
         <Route path="/login" element={<Login theme={theme} device={deviceType} />} />
         <Route path="/logout" element={<Logout />} />

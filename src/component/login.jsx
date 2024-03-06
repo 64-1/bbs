@@ -105,7 +105,7 @@ class Login extends Component {
 
           <form onSubmit={this.handleSubmit} className="p-3">
             <div className="form-group">
-              <label htmlFor="email">email</label>
+              <label htmlFor="email">Email:</label>
               <input
                 type="email"
                 className="form-control"
@@ -118,7 +118,7 @@ class Login extends Component {
               )}
             </div>
             <div className="form-group">
-              <label htmlFor="password">password</label>
+              <label htmlFor="password">Password:</label>
               <input
                 type="password"
                 className="form-control"
@@ -136,7 +136,7 @@ class Login extends Component {
                 id="checkBox"
               />
               <label className="form-check-label" htmlFor="checkBox">
-                I'm just a pretty.
+                I'm just pretty.
               </label>
               {errors.warning && (
                 <div className="alert alert-danger w-50 m-auto text-center  ">
@@ -147,7 +147,7 @@ class Login extends Component {
             <div className="d-flex justify-content-between">
               <div className="text-white">SURPRISE</div>
               <Link to="/register" className="">
-                Register
+                Register?
               </Link>
               <button
                 type="button"
@@ -155,7 +155,7 @@ class Login extends Component {
                 onClick={this.handleSubmit}
                 disabled={this.validata()}
               >
-                submit
+                Login
               </button>
             </div>
           </form>
@@ -175,7 +175,7 @@ class Login extends Component {
 
           <form onSubmit={this.handleSubmit} className="p-3">
             <div className="form-group">
-              <label htmlFor="email">email</label>
+              <label htmlFor="email">Email:</label>
               <input
                 type="email"
                 className="form-control"
@@ -188,7 +188,7 @@ class Login extends Component {
               )}
             </div>
             <div className="form-group">
-              <label htmlFor="password">password</label>
+              <label htmlFor="password">Password:</label>
               <input
                 type="password"
                 className="form-control"
@@ -206,7 +206,7 @@ class Login extends Component {
                 id="checkBox"
               />
               <label className="form-check-label" htmlFor="checkBox">
-                I'm just a pretty.
+                I'm just pretty.
               </label>
               {errors.warning && (
                 <div className="alert alert-danger w-50 m-auto text-center  ">
@@ -217,7 +217,7 @@ class Login extends Component {
             <div className="d-flex justify-content-between">
               <div className="text-white">SURPRISE!</div>
               <Link to="/register" className="text-light">
-                Register
+                Register?
               </Link>
               <button
                 type="button"
@@ -225,7 +225,7 @@ class Login extends Component {
                 onClick={this.handleSubmit}
                 disabled={this.validata()}
               >
-                submit
+                Login
               </button>
             </div>
           </form>
